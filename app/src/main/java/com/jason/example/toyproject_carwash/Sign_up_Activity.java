@@ -35,7 +35,6 @@ public class Sign_up_Activity extends AppCompatActivity {
         // 전체 동의 checkBox 기능 넣어주기
 
 
-
     }
 
     private void backToLogin(View view) {
