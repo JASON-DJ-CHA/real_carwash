@@ -4,15 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#29538C"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="141dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/cloud" />
+
     <TextView
+        android:id="@+id/tvWeatherInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="5일 후 비소식이있어요!"
+        android:textSize="15dp"
+        android:layout_marginLeft="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCheckWeather"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="현재 위치 : "
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvLocation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="서울 강남"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnCheckWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="일기예보 확인하기"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/tvWeatherInfo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvWeatherInfo" />
+
+    <Button
+        android:id="@+id/btnCheckMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="지도로 확인하기"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvCarWashLocation"
+        app:layout_constraintStart_toStartOf="@+id/tvCarWashLocation"
+        app:layout_constraintTop_toBottomOf="@+id/tvCarWashLocation" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가장 가까운 세차장"
+        android:textSize="30dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCheckWeather"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/tvCarWashLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="클린세차장"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 </androidx.constraintlayout.widget.ConstraintLayout>
