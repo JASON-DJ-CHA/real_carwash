@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1096667311533",
+    "project_id": "toyprojectcarwash",
+    "storage_bucket": "toyprojectcarwash.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096667311533:android:a962b60c9c0f8c472d0524",
+        "android_client_info": {
+          "package_name": "com.jason.example.toyproject_carwash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096667311533-jr9mhtaki03camjtneodqbu8chvh0dcs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLl3eLZ0Kr8AAiUdezw1hLSiEmvlLNxYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096667311533-jr9mhtaki03camjtneodqbu8chvh0dcs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
