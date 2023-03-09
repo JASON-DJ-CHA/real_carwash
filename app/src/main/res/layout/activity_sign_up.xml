@@ -53,21 +53,9 @@
             app:layout_constraintTop_toTopOf="@+id/etEmailAddress" />
 
         <EditText
-            android:id="@+id/etNickName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="닉네임 입력"
-            android:inputType="textPersonName"
-            app:layout_constraintBottom_toTopOf="@+id/tvNickname"
-            app:layout_constraintStart_toStartOf="@+id/tvPassword"
-            app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
-
-        <EditText
             android:id="@+id/etPassword2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:ems="10"
             android:hint="비밀번호 중복 확인"
             android:inputType="textPassword"
@@ -93,8 +81,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="8dp"
-            android:padding="10dp"
             android:background="#FEFEFE"
+            android:padding="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView"
@@ -104,8 +92,9 @@
             android:id="@+id/btnSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="40dp"
             android:text="가입하기"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cbSecond" />
@@ -116,13 +105,14 @@
             android:layout_height="wrap_content"
             android:text="전체 동의"
             app:layout_constraintBottom_toTopOf="@+id/cbFirst"
-            app:layout_constraintStart_toStartOf="@+id/tvNickname"
-            app:layout_constraintTop_toBottomOf="@+id/tvNickname" />
+            app:layout_constraintStart_toStartOf="@+id/tvPassword"
+            app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
 
         <CheckBox
             android:id="@+id/cbFirst"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             app:layout_constraintBottom_toTopOf="@+id/cbSecond"
             app:layout_constraintStart_toStartOf="@+id/cbAll"
             app:layout_constraintTop_toBottomOf="@+id/cbAll" />
@@ -149,21 +139,11 @@
             android:id="@+id/tvPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="비밀번호가 일치하지 않습니다."
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/etNickName"
-            app:layout_constraintStart_toStartOf="@+id/etPassword2"
-            app:layout_constraintTop_toBottomOf="@+id/etPassword2" />
-
-        <TextView
-            android:id="@+id/tvNickname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="한글, 영문 2자이상."
+            android:text="영문, 숫자, 특수문자 조합 8자이상."
             android:textColor="@color/black"
             app:layout_constraintBottom_toTopOf="@+id/cbAll"
-            app:layout_constraintStart_toStartOf="@+id/etNickName"
-            app:layout_constraintTop_toBottomOf="@+id/etNickName" />
+            app:layout_constraintStart_toStartOf="@+id/etPassword2"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword2" />
 
         <TextView
             android:id="@+id/textView2"
