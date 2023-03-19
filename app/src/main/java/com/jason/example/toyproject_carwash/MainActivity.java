@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import java.util.logging.Handler;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -37,7 +38,25 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void moveToMain(View view) {
-        useIntent(MainActivity.class);
+
+        mAuth.signInAnonymously()
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            // Sign in success, update UI with the signed-in user's information
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            Log.d("익명로그인",user.getUid());
+
+                            useIntent(MainActivity.class);
+                        } else {
+                            // If sign in fails, display a message to the user.
+                        }
+                    }
+                });
+
+
+
     }
 
     private void login(View view) {
